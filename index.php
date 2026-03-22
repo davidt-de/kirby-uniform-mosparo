@@ -6,7 +6,7 @@
  * This is the main entry point for the Kirby plugin. It loads the Composer
  * autoloader and registers the plugin with Kirby's plugin system.
  *
- * Plugin Name: getkirby-uniform/mosparo
+ * Plugin Name: davidt-de/uniform-mosparo
  * Description: Mosparo spam protection for Kirby Uniform forms
  * Version: 1.0.0
  * Author: Patrick Davidt
@@ -29,4 +29,4 @@ if (!class_exists(Kirby::class)) {
 }
 
 // Register the plugin with Kirby
-Kirby::plugin('getkirby-uniform/mosparo', MosparoPlugin::register());
+Kirby::plugin('davidt-de/uniform-mosparo', MosparoPlugin::register());

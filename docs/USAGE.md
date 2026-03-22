@@ -467,7 +467,7 @@ Or disable in development via config:
 ```php
 // site/config/config.php
 return [
-    'getkirby-uniform.mosparo.host' => $kirby->environment() === 'production' 
+    'davidt-de.uniform-mosparo.host' => $kirby->environment() === 'production' 
         ? 'https://mosparo.example.com' 
         : null,
 ];
@@ -661,7 +661,7 @@ document.getElementById('contact-form').addEventListener('submit', async (e) => 
 1. **Is Mosparo configured?**
    ```php
    // Add temporarily to template for debugging
-   <pre><?php var_dump($kirby->option('getkirby-uniform.mosparo.host')) ?></pre>
+   <pre><?php var_dump($kirby->option('davidt-de.uniform-mosparo.host')) ?></pre>
    ```
 
 2. **Check browser console for JS errors**
@@ -678,7 +678,7 @@ document.getElementById('contact-form').addEventListener('submit', async (e) => 
 4. **Enable debug mode:**
    ```php
    // config.php
-   'getkirby-uniform.mosparo.debug' => true,
+   'davidt-de.uniform-mosparo.debug' => true,
    ```
    Then check Kirby's error logs.
 
@@ -702,7 +702,7 @@ document.getElementById('contact-form').addEventListener('submit', async (e) => 
 3. **Check server can reach Mosparo:**
    ```php
    // Test in a controller
-   $host = $kirby->option('getkirby-uniform.mosparo.host');
+   $host = $kirby->option('davidt-de.uniform-mosparo.host');
    $response = file_get_contents($host . '/api/v1/health');
    var_dump($response);
    ```
@@ -719,7 +719,7 @@ Enable debug mode to see detailed information:
 ```php
 // site/config/config.php
 return [
-    'getkirby-uniform.mosparo.debug' => true,
+    'davidt-de.uniform-mosparo.debug' => true,
 ];
 ```
 

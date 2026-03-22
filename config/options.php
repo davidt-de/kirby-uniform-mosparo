@@ -18,32 +18,32 @@ return [
      * Mosparo instance URL
      * The URL where your Mosparo instance is hosted
      */
-    'getkirby-uniform.mosparo.host' => 'https://mosparo.example.com',
+    'davidt-de.uniform-mosparo.host' => 'https://mosparo.example.com',
     
     /**
      * Mosparo project UUID
      * Found in your Mosparo project settings
      */
-    'getkirby-uniform.mosparo.uuid' => 'your-project-uuid-here',
+    'davidt-de.uniform-mosparo.uuid' => 'your-project-uuid-here',
     
     /**
      * Mosparo public key
      * Used for frontend widget initialization (safe to expose)
      */
-    'getkirby-uniform.mosparo.publicKey' => 'your-public-key-here',
+    'davidt-de.uniform-mosparo.publicKey' => 'your-public-key-here',
     
     /**
      * Mosparo private key
      * Used for server-side API verification (keep secret!)
      */
-    'getkirby-uniform.mosparo.privateKey' => 'your-private-key-here',
+    'davidt-de.uniform-mosparo.privateKey' => 'your-private-key-here',
     
     /**
      * Fields to ignore during verification
      * These fields won't be sent to Mosparo (e.g., passwords, CSRF tokens)
      * Default: ['password', 'password_confirm', 'csrf_token']
      */
-    'getkirby-uniform.mosparo.ignoredFields' => [
+    'davidt-de.uniform-mosparo.ignoredFields' => [
         'password',
         'password_confirm',
         'csrf_token',
@@ -53,12 +53,12 @@ return [
      * Custom CSS URL for widget styling
      * Optional: URL to custom CSS file for Mosparo widget appearance
      */
-    'getkirby-uniform.mosparo.cssUrl' => null,
+    'davidt-de.uniform-mosparo.cssUrl' => null,
     
     /**
      * Debug mode
      * Enable detailed logging for troubleshooting
      * Default: false
      */
-    'getkirby-uniform.mosparo.debug' => false,
+    'davidt-de.uniform-mosparo.debug' => false,
 ];

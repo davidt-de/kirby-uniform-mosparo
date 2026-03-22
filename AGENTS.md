@@ -234,7 +234,7 @@ The test suite is configured to:
 3. **Never** commit to version control
 4. Use environment variables or Kirby secrets for storage:
    ```php
-   'getkirby-uniform.mosparo.privateKey' => getenv('MOSPARO_PRIVATE_KEY'),
+   'davidt-de.uniform-mosparo.privateKey' => getenv('MOSPARO_PRIVATE_KEY'),
    ```
 
 ### Ignored Fields
@@ -242,7 +242,7 @@ The test suite is configured to:
 Sensitive form fields are automatically excluded from Mosparo verification:
 
 - Default: `['password', 'password_confirm', 'csrf_token']`
-- Configurable via `getkirby-uniform.mosparo.ignoredFields`
+- Configurable via `davidt-de.uniform-mosparo.ignoredFields`
 - Never send passwords, credit cards, or personal data to Mosparo
 
 ### Error Handling
@@ -262,23 +262,23 @@ The `VerificationService` includes bypass protection via `verifyRequiredFields()
 
 ### Option Prefix
 
-All configuration options use the prefix: `getkirby-uniform.mosparo.`
+All configuration options use the prefix: `davidt-de.uniform-mosparo.`
 
 ### Required Options
 
 ```php
-'getkirby-uniform.mosparo.host'        // string: Mosparo instance URL
-'getkirby-uniform.mosparo.uuid'        // string: Project UUID
-'getkirby-uniform.mosparo.publicKey'   // string: Public key (frontend-safe)
-'getkirby-uniform.mosparo.privateKey'  // string: Private key (server-only)
+'davidt-de.uniform-mosparo.host'        // string: Mosparo instance URL
+'davidt-de.uniform-mosparo.uuid'        // string: Project UUID
+'davidt-de.uniform-mosparo.publicKey'   // string: Public key (frontend-safe)
+'davidt-de.uniform-mosparo.privateKey'  // string: Private key (server-only)
 ```
 
 ### Optional Options
 
 ```php
-'getkirby-uniform.mosparo.ignoredFields' // array: Fields to exclude (default: passwords, CSRF)
-'getkirby-uniform.mosparo.cssUrl'      // string|null: Custom CSS URL
-'getkirby-uniform.mosparo.debug'       // bool: Debug mode (default: false)
+'davidt-de.uniform-mosparo.ignoredFields' // array: Fields to exclude (default: passwords, CSRF)
+'davidt-de.uniform-mosparo.cssUrl'      // string|null: Custom CSS URL
+'davidt-de.uniform-mosparo.debug'       // bool: Debug mode (default: false)
 ```
 
 ### Configuration Factory
@@ -316,7 +316,7 @@ $config = ConfigFactory::create([
 ### Factory Pattern
 
 `ConfigFactory` creates Config instances:
-- Handles option prefixing (`getkirby-uniform.mosparo.`)
+- Handles option prefixing (`davidt-de.uniform-mosparo.`)
 - Type coercion from Kirby options
 - Default value application
 
@@ -374,7 +374,7 @@ Add translations in `i18n/{lang}.php` files.
 Enable debug mode in configuration:
 
 ```php
-'getkirby-uniform.mosparo.debug' => true,
+'davidt-de.uniform-mosparo.debug' => true,
 ```
 
 This enables detailed logging (check PHP error logs).

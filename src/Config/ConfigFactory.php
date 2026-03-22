@@ -29,13 +29,13 @@ final class ConfigFactory
     /**
      * Option prefix for all Mosparo configuration options.
      */
-    private const OPTION_PREFIX = 'getkirby-uniform.mosparo.';
+    private const OPTION_PREFIX = 'davidt-de.uniform-mosparo.';
 
     /**
      * Create a Config instance from Kirby options.
      *
      * Reads configuration from Kirby's option() system with the prefix
-     * 'getkirby-uniform.mosparo.'.
+     * 'davidt-de.uniform-mosparo.'.
      *
      * @return Config
      */

@@ -15,7 +15,7 @@ Complete reference for all Mosparo configuration options in Kirby Uniform.
 
 ## Introduction
 
-Mosparo configuration is managed through Kirby's options system. All settings are prefixed with `getkirby-uniform.mosparo.` and should be defined in your Kirby site's configuration file.
+Mosparo configuration is managed through Kirby's options system. All settings are prefixed with `davidt-de.uniform-mosparo.` and should be defined in your Kirby site's configuration file.
 
 **Configuration file location:**
 - Standard Kirby site: `site/config/config.php`
@@ -27,7 +27,7 @@ Mosparo configuration is managed through Kirby's options system. All settings ar
 
 These options must be configured for Mosparo to work. If any are missing, the plugin will silently fail (return empty HTML) to prevent breaking your forms.
 
-### `getkirby-uniform.mosparo.host`
+### `davidt-de.uniform-mosparo.host`
 
 Your Mosparo instance URL.
 
@@ -40,7 +40,7 @@ Your Mosparo instance URL.
 ```php
 // config.php
 return [
-    'getkirby-uniform.mosparo.host' => 'https://mosparo.example.com',
+    'davidt-de.uniform-mosparo.host' => 'https://mosparo.example.com',
 ];
 ```
 
@@ -50,7 +50,7 @@ return [
 
 ---
 
-### `getkirby-uniform.mosparo.uuid`
+### `davidt-de.uniform-mosparo.uuid`
 
 Your Mosparo project UUID.
 
@@ -63,7 +63,7 @@ Your Mosparo project UUID.
 ```php
 // config.php
 return [
-    'getkirby-uniform.mosparo.uuid' => '550e8400-e29b-41d4-a716-446655440000',
+    'davidt-de.uniform-mosparo.uuid' => '550e8400-e29b-41d4-a716-446655440000',
 ];
 ```
 
@@ -74,7 +74,7 @@ return [
 
 ---
 
-### `getkirby-uniform.mosparo.publicKey`
+### `davidt-de.uniform-mosparo.publicKey`
 
 Public key for frontend widget initialization.
 
@@ -87,7 +87,7 @@ Public key for frontend widget initialization.
 ```php
 // config.php
 return [
-    'getkirby-uniform.mosparo.publicKey' => 'mpk_abc123def456...',
+    'davidt-de.uniform-mosparo.publicKey' => 'mpk_abc123def456...',
 ];
 ```
 
@@ -100,7 +100,7 @@ return [
 
 ---
 
-### `getkirby-uniform.mosparo.privateKey`
+### `davidt-de.uniform-mosparo.privateKey`
 
 Private key for server-side API verification.
 
@@ -113,7 +113,7 @@ Private key for server-side API verification.
 ```php
 // config.php
 return [
-    'getkirby-uniform.mosparo.privateKey' => 'msk_xyz789abc123...',
+    'davidt-de.uniform-mosparo.privateKey' => 'msk_xyz789abc123...',
 ];
 ```
 
@@ -133,7 +133,7 @@ return [
 
 These options have sensible defaults and are only needed for customization.
 
-### `getkirby-uniform.mosparo.ignoredFields`
+### `davidt-de.uniform-mosparo.ignoredFields`
 
 Fields to exclude from Mosparo verification.
 
@@ -146,7 +146,7 @@ Fields to exclude from Mosparo verification.
 ```php
 // config.php - Add custom ignored fields
 return [
-    'getkirby-uniform.mosparo.ignoredFields' => [
+    'davidt-de.uniform-mosparo.ignoredFields' => [
         'password',
         'password_confirm',
         'csrf_token',
@@ -165,7 +165,7 @@ The default ignores common sensitive fields. Add more as needed for your forms.
 
 ---
 
-### `getkirby-uniform.mosparo.cssUrl`
+### `davidt-de.uniform-mosparo.cssUrl`
 
 Custom CSS URL for widget styling.
 
@@ -178,7 +178,7 @@ Custom CSS URL for widget styling.
 ```php
 // config.php - Use custom styling
 return [
-    'getkirby-uniform.mosparo.cssUrl' => '/assets/css/mosparo-custom.css',
+    'davidt-de.uniform-mosparo.cssUrl' => '/assets/css/mosparo-custom.css',
 ];
 ```
 
@@ -191,7 +191,7 @@ return [
 
 ---
 
-### `getkirby-uniform.mosparo.debug`
+### `davidt-de.uniform-mosparo.debug`
 
 Enable detailed logging for troubleshooting.
 
@@ -204,7 +204,7 @@ Enable detailed logging for troubleshooting.
 ```php
 // config.php - Enable debug mode
 return [
-    'getkirby-uniform.mosparo.debug' => true,
+    'davidt-de.uniform-mosparo.debug' => true,
 ];
 ```
 
@@ -232,19 +232,19 @@ return [
     // =========================================================================
     
     // Required: Your Mosparo instance URL
-    'getkirby-uniform.mosparo.host' => 'https://mosparo.example.com',
+    'davidt-de.uniform-mosparo.host' => 'https://mosparo.example.com',
     
     // Required: Project UUID from Mosparo dashboard
-    'getkirby-uniform.mosparo.uuid' => '550e8400-e29b-41d4-a716-446655440000',
+    'davidt-de.uniform-mosparo.uuid' => '550e8400-e29b-41d4-a716-446655440000',
     
     // Required: Public key (safe to expose)
-    'getkirby-uniform.mosparo.publicKey' => 'mpk_abc123def456...',
+    'davidt-de.uniform-mosparo.publicKey' => 'mpk_abc123def456...',
     
     // Required: Private key (keep secret!)
-    'getkirby-uniform.mosparo.privateKey' => 'msk_xyz789abc123...',
+    'davidt-de.uniform-mosparo.privateKey' => 'msk_xyz789abc123...',
     
     // Optional: Fields to ignore during verification
-    'getkirby-uniform.mosparo.ignoredFields' => [
+    'davidt-de.uniform-mosparo.ignoredFields' => [
         'password',
         'password_confirm',
         'csrf_token',
@@ -252,10 +252,10 @@ return [
     ],
     
     // Optional: Custom CSS URL
-    'getkirby-uniform.mosparo.cssUrl' => null,
+    'davidt-de.uniform-mosparo.cssUrl' => null,
     
     // Optional: Debug mode (enable only for troubleshooting)
-    'getkirby-uniform.mosparo.debug' => false,
+    'davidt-de.uniform-mosparo.debug' => false,
 ];
 ```
 
@@ -273,13 +273,13 @@ Kirby supports different configurations for different environments.
 
 return [
     // Use test Mosparo project for development
-    'getkirby-uniform.mosparo.host' => 'https://mosparo-test.example.com',
-    'getkirby-uniform.mosparo.uuid' => 'dev-project-uuid',
-    'getkirby-uniform.mosparo.publicKey' => 'mpk_dev_...',
-    'getkirby-uniform.mosparo.privateKey' => 'msk_dev_...',
+    'davidt-de.uniform-mosparo.host' => 'https://mosparo-test.example.com',
+    'davidt-de.uniform-mosparo.uuid' => 'dev-project-uuid',
+    'davidt-de.uniform-mosparo.publicKey' => 'mpk_dev_...',
+    'davidt-de.uniform-mosparo.privateKey' => 'msk_dev_...',
     
     // Enable debug mode for development
-    'getkirby-uniform.mosparo.debug' => true,
+    'davidt-de.uniform-mosparo.debug' => true,
 ];
 ```
 
@@ -291,13 +291,13 @@ return [
 
 return [
     // Production Mosparo project
-    'getkirby-uniform.mosparo.host' => 'https://mosparo.example.com',
-    'getkirby-uniform.mosparo.uuid' => 'prod-project-uuid',
-    'getkirby-uniform.mosparo.publicKey' => 'mpk_prod_...',
-    'getkirby-uniform.mosparo.privateKey' => 'msk_prod_...',
+    'davidt-de.uniform-mosparo.host' => 'https://mosparo.example.com',
+    'davidt-de.uniform-mosparo.uuid' => 'prod-project-uuid',
+    'davidt-de.uniform-mosparo.publicKey' => 'mpk_prod_...',
+    'davidt-de.uniform-mosparo.privateKey' => 'msk_prod_...',
     
     // Disable debug mode in production
-    'getkirby-uniform.mosparo.debug' => false,
+    'davidt-de.uniform-mosparo.debug' => false,
 ];
 ```
 
@@ -328,10 +328,10 @@ The private key must be kept secret. Here are best practices:
 // site/config/config.php
 
 return [
-    'getkirby-uniform.mosparo.host' => 'https://mosparo.example.com',
-    'getkirby-uniform.mosparo.uuid' => '550e8400-e29b-41d4-a716-446655440000',
-    'getkirby-uniform.mosparo.publicKey' => 'mpk_abc123...',
-    'getkirby-uniform.mosparo.privateKey' => getenv('MOSPARO_PRIVATE_KEY'),
+    'davidt-de.uniform-mosparo.host' => 'https://mosparo.example.com',
+    'davidt-de.uniform-mosparo.uuid' => '550e8400-e29b-41d4-a716-446655440000',
+    'davidt-de.uniform-mosparo.publicKey' => 'mpk_abc123...',
+    'davidt-de.uniform-mosparo.privateKey' => getenv('MOSPARO_PRIVATE_KEY'),
 ];
 ```
 
@@ -357,7 +357,7 @@ Kirby 4+ supports a secrets file:
 // site/config/secrets.php
 
 return [
-    'getkirby-uniform.mosparo.privateKey' => 'msk_xyz789...',
+    'davidt-de.uniform-mosparo.privateKey' => 'msk_xyz789...',
 ];
 ```
 
@@ -374,7 +374,7 @@ Store sensitive config outside the web root:
 $secrets = require '/etc/kirby/secrets.php';
 
 return [
-    'getkirby-uniform.mosparo.privateKey' => $secrets['mosparo_private_key'],
+    'davidt-de.uniform-mosparo.privateKey' => $secrets['mosparo_private_key'],
 ];
 ```
 
@@ -391,7 +391,7 @@ git commit -m "Add config"
 ```php
 <!-- BAD - Never do this -->
 <script>
-    const privateKey = '<?= $kirby->option("getkirby-uniform.mosparo.privateKey") ?>';
+    const privateKey = '<?= $kirby->option("davidt-de.uniform-mosparo.privateKey") ?>';
 </script>
 ```
 
@@ -409,7 +409,7 @@ Check that your private key is properly protected:
 <?php
 // In a controller or template
 
-$privateKey = $kirby->option('getkirby-uniform.mosparo.privateKey');
+$privateKey = $kirby->option('davidt-de.uniform-mosparo.privateKey');
 
 // Should NOT output the actual key
 echo 'Private key configured: ' . ($privateKey ? 'Yes' : 'No');

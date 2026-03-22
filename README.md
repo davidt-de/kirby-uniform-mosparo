@@ -68,10 +68,10 @@ Add your Mosparo credentials to `site/config/config.php`:
 
 return [
     // Mosparo Configuration
-    'getkirby-uniform.mosparo.host' => 'https://your-project.mosparo.io',
-    'getkirby-uniform.mosparo.uuid' => 'your-project-uuid',
-    'getkirby-uniform.mosparo.publicKey' => 'your-public-key',
-    'getkirby-uniform.mosparo.privateKey' => 'your-private-key',
+    'davidt-de.uniform-mosparo.host' => 'https://your-project.mosparo.io',
+    'davidt-de.uniform-mosparo.uuid' => 'your-project-uuid',
+    'davidt-de.uniform-mosparo.publicKey' => 'your-public-key',
+    'davidt-de.uniform-mosparo.privateKey' => 'your-private-key',
 ];
 ```
 

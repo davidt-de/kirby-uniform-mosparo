@@ -88,10 +88,10 @@ return [
 **After (Mosparo in config.php):**
 ```php
 return [
-    'getkirby-uniform.mosparo.host' => 'https://mosparo.yourdomain.com',
-    'getkirby-uniform.mosparo.uuid' => 'your-project-uuid',
-    'getkirby-uniform.mosparo.publicKey' => 'your-public-key',
-    'getkirby-uniform.mosparo.privateKey' => 'your-private-key',
+    'davidt-de.uniform-mosparo.host' => 'https://mosparo.yourdomain.com',
+    'davidt-de.uniform-mosparo.uuid' => 'your-project-uuid',
+    'davidt-de.uniform-mosparo.publicKey' => 'your-public-key',
+    'davidt-de.uniform-mosparo.privateKey' => 'your-private-key',
 ];
 ```
 
@@ -162,10 +162,10 @@ return [
 **After (Mosparo in config.php):**
 ```php
 return [
-    'getkirby-uniform.mosparo.host' => 'https://mosparo.yourdomain.com',
-    'getkirby-uniform.mosparo.uuid' => 'your-project-uuid',
-    'getkirby-uniform.mosparo.publicKey' => 'your-public-key',
-    'getkirby-uniform.mosparo.privateKey' => 'your-private-key',
+    'davidt-de.uniform-mosparo.host' => 'https://mosparo.yourdomain.com',
+    'davidt-de.uniform-mosparo.uuid' => 'your-project-uuid',
+    'davidt-de.uniform-mosparo.publicKey' => 'your-public-key',
+    'davidt-de.uniform-mosparo.privateKey' => 'your-private-key',
 ];
 ```
 
@@ -236,10 +236,10 @@ return [
 **After (Mosparo in config.php):**
 ```php
 return [
-    'getkirby-uniform.mosparo.host' => 'https://mosparo.yourdomain.com',
-    'getkirby-uniform.mosparo.uuid' => 'your-project-uuid',
-    'getkirby-uniform.mosparo.publicKey' => 'your-public-key',
-    'getkirby-uniform.mosparo.privateKey' => 'your-private-key',
+    'davidt-de.uniform-mosparo.host' => 'https://mosparo.yourdomain.com',
+    'davidt-de.uniform-mosparo.uuid' => 'your-project-uuid',
+    'davidt-de.uniform-mosparo.publicKey' => 'your-public-key',
+    'davidt-de.uniform-mosparo.privateKey' => 'your-private-key',
 ];
 ```
 
@@ -354,7 +354,7 @@ Submit the form and verify:
 
 Add to your config to see detailed errors:
 ```php
-'getkirby-uniform.mosparo.debug' => true
+'davidt-de.uniform-mosparo.debug' => true
 ```
 
 Check your PHP error logs for detailed Mosparo API responses.

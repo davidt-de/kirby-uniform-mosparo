@@ -13,7 +13,7 @@ This guide helps you resolve common issues with the Kirby Uniform Mosparo plugin
 ```php
 // site/config/config.php
 return [
-    'getkirby-uniform.mosparo.debug' => true,
+    'davidt-de.uniform-mosparo.debug' => true,
 ];
 ```
 
@@ -39,10 +39,10 @@ The Mosparo widget does not appear on your form page.
 ```php
 // Verify all required options are set in site/config/config.php
 return [
-    'getkirby-uniform.mosparo.host' => 'https://mosparo.yourdomain.com',
-    'getkirby-uniform.mosparo.uuid' => 'your-project-uuid',
-    'getkirby-uniform.mosparo.publicKey' => 'your-public-key',
-    'getkirby-uniform.mosparo.privateKey' => 'your-private-key',
+    'davidt-de.uniform-mosparo.host' => 'https://mosparo.yourdomain.com',
+    'davidt-de.uniform-mosparo.uuid' => 'your-project-uuid',
+    'davidt-de.uniform-mosparo.publicKey' => 'your-public-key',
+    'davidt-de.uniform-mosparo.privateKey' => 'your-private-key',
 ];
 ```
 
@@ -220,10 +220,10 @@ This error occurs when required configuration options are missing.
 **Required options:**
 ```php
 // All four are required
-'getkirby-uniform.mosparo.host'       // https://mosparo.yourdomain.com
-'getkirby-uniform.mosparo.uuid'       // Your project UUID
-'getkirby-uniform.mosparo.publicKey'  // Your public key
-'getkirby-uniform.mosparo.privateKey' // Your private key
+'davidt-de.uniform-mosparo.host'       // https://mosparo.yourdomain.com
+'davidt-de.uniform-mosparo.uuid'       // Your project UUID
+'davidt-de.uniform-mosparo.publicKey'  // Your public key
+'davidt-de.uniform-mosparo.privateKey' // Your private key
 ```
 
 **How to verify credentials:**
@@ -315,7 +315,7 @@ Add to your Kirby configuration:
 ```php
 // site/config/config.php
 return [
-    'getkirby-uniform.mosparo.debug' => true,
+    'davidt-de.uniform-mosparo.debug' => true,
 ];
 ```
 
@@ -381,10 +381,10 @@ When reporting an issue, include:
 ```php
 // Show structure, NOT actual keys
 return [
-    'getkirby-uniform.mosparo.host' => 'https://mosparo.example.com',
-    'getkirby-uniform.mosparo.uuid' => 'SET',
-    'getkirby-uniform.mosparo.publicKey' => 'SET',
-    'getkirby-uniform.mosparo.privateKey' => 'SET',
+    'davidt-de.uniform-mosparo.host' => 'https://mosparo.example.com',
+    'davidt-de.uniform-mosparo.uuid' => 'SET',
+    'davidt-de.uniform-mosparo.publicKey' => 'SET',
+    'davidt-de.uniform-mosparo.privateKey' => 'SET',
 ];
 ```
 
