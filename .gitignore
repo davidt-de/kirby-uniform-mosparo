@@ -2,6 +2,9 @@
 /vendor/
 /composer.lock
 
+# Kirby plugin dependencies (installed via Composer)
+/site/plugins/
+
 # Test coverage reports
 /tests/coverage/
 
