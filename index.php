@@ -17,13 +17,22 @@
  * @license MIT
  */
 
-// Load autoloader - check for plugin's own vendor first (standalone), then fall back to Kirby's vendor
-$autoloadFile = __DIR__ . '/vendor/autoload.php';
-if (!file_exists($autoloadFile)) {
-    // When installed via Composer in a Kirby project, use Kirby's autoloader
-    $autoloadFile = __DIR__ . '/../../vendor/autoload.php';
+// Load autoloader if classes are not already available (Composer autoloader should handle this in most cases)
+if (!class_exists(Uniform\Mosparo\MosparoPlugin::class)) {
+    $autoloadFile = __DIR__ . '/vendor/autoload.php';
+    if (!file_exists($autoloadFile)) {
+        // When installed via Composer in a Kirby project, use Kirby's autoloader
+        // The plugin is in vendor/davidt-de/kirby-uniform-mosparo, so go 3 levels up to project root
+        $autoloadFile = __DIR__ . '/../../../vendor/autoload.php';
+    }
+    if (!file_exists($autoloadFile)) {
+        // Alternative: maybe we're in site/plugins directly (not via symlink)
+        $autoloadFile = __DIR__ . '/../../vendor/autoload.php';
+    }
+    if (file_exists($autoloadFile)) {
+        require_once $autoloadFile;
+    }
 }
-require_once $autoloadFile;
 require_once __DIR__ . '/src/helpers.php';
 
 use Kirby\Cms\Kirby;
