@@ -19,7 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Kirby 3.5+, 4.x, and 5.x compatibility
 - Mosparo Guard for Uniform forms (`MosparoGuard::perform()`)
 - Server-side verification via Mosparo PHP API client (^1.0)
-- Configuration system with Kirby options (`getkirby-uniform.mosparo.*`)
+- Configuration system with Kirby options (`davidt-de.uniform-mosparo.*`)
 - Configuration value object with readonly properties (PHP 8.1+)
 - Template helper functions (`mosparo_field()`, `mosparo_script()`)
 - Form trait extensions (`$form->mosparoField()`, `$form->mosparoScript()`)
@@ -40,5 +40,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Bypass detection for bot submissions
 - Error sanitization to prevent information leakage
 
-[Unreleased]: https://github.com/getkirby-uniform/mosparo/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/getkirby-uniform/mosparo/releases/tag/v1.0.0
+[Unreleased]: https://github.com/davidt-de/uniform-mosparo/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/davidt-de/uniform-mosparo/releases/tag/v1.0.0

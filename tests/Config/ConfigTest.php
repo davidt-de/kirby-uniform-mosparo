@@ -238,13 +238,13 @@ final class ConfigTest extends MockeryTestCase
 
         // Define option return values
         $options = [
-            'getkirby-uniform.mosparo.host' => 'https://mosparo.example.com',
-            'getkirby-uniform.mosparo.uuid' => 'test-uuid',
-            'getkirby-uniform.mosparo.publicKey' => 'public-key',
-            'getkirby-uniform.mosparo.privateKey' => 'private-key',
-            'getkirby-uniform.mosparo.ignoredFields' => ['custom_field'],
-            'getkirby-uniform.mosparo.cssUrl' => 'https://example.com/style.css',
-            'getkirby-uniform.mosparo.debug' => true,
+            'davidt-de.uniform-mosparo.host' => 'https://mosparo.example.com',
+            'davidt-de.uniform-mosparo.uuid' => 'test-uuid',
+            'davidt-de.uniform-mosparo.publicKey' => 'public-key',
+            'davidt-de.uniform-mosparo.privateKey' => 'private-key',
+            'davidt-de.uniform-mosparo.ignoredFields' => ['custom_field'],
+            'davidt-de.uniform-mosparo.cssUrl' => 'https://example.com/style.css',
+            'davidt-de.uniform-mosparo.debug' => true,
         ];
 
         $mockApp->shouldReceive('option')
@@ -289,8 +289,8 @@ final class ConfigTest extends MockeryTestCase
         $mockApp->shouldReceive('instance')->andReturn($mockApp);
 
         $options = [
-            'getkirby-uniform.mosparo.host' => 'https://mosparo.example.com',
-            'getkirby-uniform.mosparo.publicKey' => 'public-key',
+            'davidt-de.uniform-mosparo.host' => 'https://mosparo.example.com',
+            'davidt-de.uniform-mosparo.publicKey' => 'public-key',
             // Missing: uuid, privateKey
         ];
 
@@ -372,9 +372,9 @@ final class ConfigTest extends MockeryTestCase
 
         // Test with non-string values that should be filtered out
         $options = [
-            'getkirby-uniform.mosparo.host' => 123, // Should be rejected
-            'getkirby-uniform.mosparo.uuid' => ['array-value'], // Should be rejected
-            'getkirby-uniform.mosparo.publicKey' => 'valid-key',
+            'davidt-de.uniform-mosparo.host' => 123, // Should be rejected
+            'davidt-de.uniform-mosparo.uuid' => ['array-value'], // Should be rejected
+            'davidt-de.uniform-mosparo.publicKey' => 'valid-key',
         ];
 
         $mockApp->shouldReceive('option')

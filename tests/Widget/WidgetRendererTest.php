@@ -43,13 +43,13 @@ class WidgetRendererTest extends MockeryTestCase
     private function createMockApp(array $options = []): App
     {
         $defaultOptions = [
-            'getkirby-uniform.mosparo.host' => 'https://mosparo.example.com',
-            'getkirby-uniform.mosparo.uuid' => 'test-uuid-12345',
-            'getkirby-uniform.mosparo.publicKey' => 'test-public-key-abc',
-            'getkirby-uniform.mosparo.privateKey' => 'test-private-key-xyz',
-            'getkirby-uniform.mosparo.cssUrl' => null,
-            'getkirby-uniform.mosparo.ignoredFields' => null,
-            'getkirby-uniform.mosparo.debug' => false,
+            'davidt-de.uniform-mosparo.host' => 'https://mosparo.example.com',
+            'davidt-de.uniform-mosparo.uuid' => 'test-uuid-12345',
+            'davidt-de.uniform-mosparo.publicKey' => 'test-public-key-abc',
+            'davidt-de.uniform-mosparo.privateKey' => 'test-private-key-xyz',
+            'davidt-de.uniform-mosparo.cssUrl' => null,
+            'davidt-de.uniform-mosparo.ignoredFields' => null,
+            'davidt-de.uniform-mosparo.debug' => false,
         ];
 
         $config = array_merge($defaultOptions, $options);
@@ -86,7 +86,7 @@ class WidgetRendererTest extends MockeryTestCase
     public function testRenderIncludesUuidAttribute(): void
     {
         $this->createMockApp([
-            'getkirby-uniform.mosparo.uuid' => 'my-test-uuid-123',
+            'davidt-de.uniform-mosparo.uuid' => 'my-test-uuid-123',
         ]);
 
         $html = WidgetRenderer::render();
@@ -100,7 +100,7 @@ class WidgetRendererTest extends MockeryTestCase
     public function testRenderIncludesPublicKeyAttribute(): void
     {
         $this->createMockApp([
-            'getkirby-uniform.mosparo.publicKey' => 'my-public-key-abc',
+            'davidt-de.uniform-mosparo.publicKey' => 'my-public-key-abc',
         ]);
 
         $html = WidgetRenderer::render();
@@ -133,7 +133,7 @@ class WidgetRendererTest extends MockeryTestCase
     public function testRenderScriptReturnsScriptTag(): void
     {
         $this->createMockApp([
-            'getkirby-uniform.mosparo.host' => 'https://mosparo.test.com',
+            'davidt-de.uniform-mosparo.host' => 'https://mosparo.test.com',
         ]);
 
         $html = WidgetRenderer::renderScript();
@@ -185,8 +185,8 @@ class WidgetRendererTest extends MockeryTestCase
     public function testRenderEscapesHtml(): void
     {
         $this->createMockApp([
-            'getkirby-uniform.mosparo.uuid' => 'test<script>alert(1)</script>',
-            'getkirby-uniform.mosparo.publicKey' => 'test"onclick="evil()',
+            'davidt-de.uniform-mosparo.uuid' => 'test<script>alert(1)</script>',
+            'davidt-de.uniform-mosparo.publicKey' => 'test"onclick="evil()',
         ]);
 
         $html = WidgetRenderer::render();
@@ -241,7 +241,7 @@ class WidgetRendererTest extends MockeryTestCase
     public function testRenderIncludesCssUrlWhenConfigured(): void
     {
         $this->createMockApp([
-            'getkirby-uniform.mosparo.cssUrl' => 'https://example.com/custom-mosparo.css',
+            'davidt-de.uniform-mosparo.cssUrl' => 'https://example.com/custom-mosparo.css',
         ]);
 
         $html = WidgetRenderer::render();

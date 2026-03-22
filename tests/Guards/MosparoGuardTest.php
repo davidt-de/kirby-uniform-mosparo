@@ -64,11 +64,11 @@ final class MosparoGuardTest extends MockeryTestCase
     private function mockKirbyApp(array $config = [], array $requestBody = [])
     {
         $defaultConfig = [
-            'getkirby-uniform.mosparo.host' => 'https://mosparo.example.com',
-            'getkirby-uniform.mosparo.uuid' => 'test-uuid',
-            'getkirby-uniform.mosparo.publicKey' => 'test-public-key',
-            'getkirby-uniform.mosparo.privateKey' => 'test-private-key',
-            'getkirby-uniform.mosparo.ignoredFields' => ['password', 'password_confirm', 'csrf_token'],
+            'davidt-de.uniform-mosparo.host' => 'https://mosparo.example.com',
+            'davidt-de.uniform-mosparo.uuid' => 'test-uuid',
+            'davidt-de.uniform-mosparo.publicKey' => 'test-public-key',
+            'davidt-de.uniform-mosparo.privateKey' => 'test-private-key',
+            'davidt-de.uniform-mosparo.ignoredFields' => ['password', 'password_confirm', 'csrf_token'],
         ];
 
         $config = array_merge($defaultConfig, $config);
@@ -146,10 +146,10 @@ final class MosparoGuardTest extends MockeryTestCase
     public function testPerformThrowsExceptionWhenNotConfigured(): void
     {
         $this->mockKirbyApp([
-            'getkirby-uniform.mosparo.host' => null,
-            'getkirby-uniform.mosparo.uuid' => null,
-            'getkirby-uniform.mosparo.publicKey' => null,
-            'getkirby-uniform.mosparo.privateKey' => null,
+            'davidt-de.uniform-mosparo.host' => null,
+            'davidt-de.uniform-mosparo.uuid' => null,
+            'davidt-de.uniform-mosparo.publicKey' => null,
+            'davidt-de.uniform-mosparo.privateKey' => null,
         ], []);
 
         $guard = new MosparoGuard(new FormStub());
@@ -166,10 +166,10 @@ final class MosparoGuardTest extends MockeryTestCase
     public function testPerformThrowsExceptionWhenPartiallyConfigured(): void
     {
         $this->mockKirbyApp([
-            'getkirby-uniform.mosparo.host' => 'https://mosparo.example.com',
-            'getkirby-uniform.mosparo.uuid' => null, // Missing
-            'getkirby-uniform.mosparo.publicKey' => 'key',
-            'getkirby-uniform.mosparo.privateKey' => 'key',
+            'davidt-de.uniform-mosparo.host' => 'https://mosparo.example.com',
+            'davidt-de.uniform-mosparo.uuid' => null, // Missing
+            'davidt-de.uniform-mosparo.publicKey' => 'key',
+            'davidt-de.uniform-mosparo.privateKey' => 'key',
         ], []);
 
         $guard = new MosparoGuard(new FormStub());
@@ -428,7 +428,7 @@ final class MosparoGuardTest extends MockeryTestCase
     public function testIgnoredFieldsAreRemovedFromFormData(): void
     {
         $this->mockKirbyApp(
-            ['getkirby-uniform.mosparo.ignoredFields' => ['password', 'secret']],
+            ['davidt-de.uniform-mosparo.ignoredFields' => ['password', 'secret']],
             [
                 'name' => 'John',
                 'password' => 'secret123',

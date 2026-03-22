@@ -6,7 +6,7 @@ This guide provides essential information for AI coding agents working on the Ki
 
 **Kirby Uniform Mosparo** is a plugin that integrates [Mosparo](https://mosparo.io) spam protection with [Kirby Uniform](https://github.com/mzur/kirby-uniform) forms. It provides privacy-friendly, GDPR-compliant spam protection as an alternative to reCAPTCHA, hCaptcha, and Cloudflare Turnstile.
 
-- **Package**: `getkirby-uniform/mosparo`
+- **Package**: `davidt-de/uniform-mosparo`
 - **Version**: 1.0.0
 - **PHP**: >= 8.0
 - **License**: MIT
