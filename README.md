@@ -40,7 +40,7 @@ This plugin integrates Mosparo spam protection with Kirby Uniform forms. Mosparo
 ### Via Composer (Recommended)
 
 ```bash
-composer require getkirby-uniform/mosparo
+composer require davidt-de/kirby-uniform-mosparo
 ```
 
 The plugin is automatically installed as a `kirby-plugin` type package via Kirby's official plugin installer.
@@ -48,13 +48,13 @@ The plugin is automatically installed as a `kirby-plugin` type package via Kirby
 ### Via Kirby CLI
 
 ```bash
-kirby plugin:install getkirby-uniform/mosparo
+kirby plugin:install davidt-de/kirby-uniform-mosparo
 ```
 
 ### Manual Installation
 
 1. Download the latest release from GitHub
-2. Extract to `site/plugins/getkirby-uniform-mosparo/`
+2. Extract to `site/plugins/uniform-mosparo/`
 3. Run `composer install` inside the plugin directory
 
 ## Quick Start
@@ -85,6 +85,7 @@ In your form controller, add the Mosparo guard:
 <?php
 
 use Uniform\Form;
+use Uniform\Mosparo\Guards\MosparoGuard;
 
 return function ($kirby, $page) {
     $form = new Form([
@@ -103,7 +104,7 @@ return function ($kirby, $page) {
     ]);
 
     if ($kirby->request()->is('POST')) {
-        $form->MosparoGuard()  // Add Mosparo protection
+        $form->guard(MosparoGuard::class)  // Add Mosparo protection
              ->emailAction([
                  'to' => 'hello@example.com',
                  'from' => 'noreply@example.com',
@@ -144,7 +145,12 @@ In your template file (e.g., `templates/contact.php`):
 
 <!-- Load Mosparo JavaScript -->
 <?= $form->mosparoScript() ?>
+
+<!-- Initialize Mosparo widget (required!) -->
+<?= $form->mosparoInit() ?>
 ```
+
+**Important:** The `mosparoInit()` call is required for the widget to work. Unlike some other CAPTCHA services, Mosparo does not auto-detect the widget container and must be explicitly initialized with JavaScript.
 
 That's it! Your form is now protected by Mosparo.
 
@@ -212,4 +218,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Made with ❤️ for the Kirby community**
 
-If you find this plugin useful, please consider [starring the repository](https://github.com/getkirby-uniform/mosparo) and [sharing your feedback](https://github.com/getkirby-uniform/mosparo/issues).
+If you find this plugin useful, please consider [starring the repository](https://github.com/davidt-de/kirby-uniform-mosparo) and [sharing your feedback](https://github.com/davidt-de/kirby-uniform-mosparo/issues).
