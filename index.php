@@ -17,7 +17,13 @@
  * @license MIT
  */
 
-require_once __DIR__ . '/vendor/autoload.php';
+// Load autoloader - check for plugin's own vendor first (standalone), then fall back to Kirby's vendor
+$autoloadFile = __DIR__ . '/vendor/autoload.php';
+if (!file_exists($autoloadFile)) {
+    // When installed via Composer in a Kirby project, use Kirby's autoloader
+    $autoloadFile = __DIR__ . '/../../vendor/autoload.php';
+}
+require_once $autoloadFile;
 require_once __DIR__ . '/src/helpers.php';
 
 use Kirby\Cms\Kirby;
