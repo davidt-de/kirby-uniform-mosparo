@@ -401,7 +401,7 @@ return [
 
 ### Where to Report
 
-- **GitHub Issues:** [github.com/getkirby-uniform/mosparo](https://github.com/getkirby-uniform/mosparo)
+- **GitHub Issues:** [github.com/davidt-de/kirby-uniform-mosparo](https://github.com/davidt-de/kirby-uniform-mosparo)
 - **Kirby Forum:** [forum.getkirby.com](https://forum.getkirby.com)
 
 ### Useful Resources
