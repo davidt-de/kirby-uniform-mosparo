@@ -10,7 +10,7 @@
  * be exposed in frontend contexts or logged.
  *
  * @package Uniform\Mosparo\Config
- * @author Patrick Schumacher <hello@patrick-schumacher.de>
+ * @author Patrick Davidt <hallo@davidt.de>
  * @license MIT
  */
 

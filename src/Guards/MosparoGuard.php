@@ -8,7 +8,7 @@
  *
  * @see https://mosparo.io/docs for API reference
  * @package Uniform\Mosparo\Guards
- * @author Patrick Schumacher <hello@patrick-schumacher.de>
+ * @author Patrick Davidt <hallo@davidt.de>
  * @license MIT
  * @extends \Uniform\Guards\Guard
  */

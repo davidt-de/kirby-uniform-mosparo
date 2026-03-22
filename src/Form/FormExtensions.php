@@ -8,7 +8,7 @@
  * used with the Uniform\Form class.
  *
  * @package Uniform\Mosparo\Form
- * @author Patrick Schumacher <hello@patrick-schumacher.de>
+ * @author Patrick Davidt <hallo@davidt.de>
  * @license MIT
  */
 

@@ -7,7 +7,7 @@
  * Registers guards, options, translations, and snippets for Mosparo integration.
  *
  * @package Uniform\Mosparo
- * @author Patrick Schumacher <hello@patrick-schumacher.de>
+ * @author Patrick Davidt <hallo@davidt.de>
  * @license MIT
  */
 

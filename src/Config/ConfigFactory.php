@@ -7,7 +7,7 @@
  * Handles option prefixing and default value application.
  *
  * @package Uniform\Mosparo\Config
- * @author Patrick Schumacher <hello@patrick-schumacher.de>
+ * @author Patrick Davidt <hallo@davidt.de>
  * @license MIT
  */
 

@@ -10,7 +10,7 @@ This guide provides essential information for AI coding agents working on the Ki
 - **Version**: 1.0.0
 - **PHP**: >= 8.0
 - **License**: MIT
-- **Author**: Patrick Schumacher <hello@patrick-schumacher.de>
+- **Author**: Patrick Davidt <hallo@davidt.de>
 
 ## Technology Stack
 
@@ -125,7 +125,7 @@ composer update
     * Longer description if needed.
     *
     * @package Uniform\Mosparo\Namespace
-    * @author Patrick Schumacher <hello@patrick-schumacher.de>
+    * @author Patrick Davidt <hallo@davidt.de>
     * @license MIT
     */
    ```

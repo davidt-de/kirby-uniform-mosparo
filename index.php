@@ -9,11 +9,11 @@
  * Plugin Name: getkirby-uniform/mosparo
  * Description: Mosparo spam protection for Kirby Uniform forms
  * Version: 1.0.0
- * Author: Patrick Schumacher
+ * Author: Patrick Davidt
  * License: MIT
  *
  * @package Uniform\Mosparo
- * @author Patrick Schumacher <hello@patrick-schumacher.de>
+ * @author Patrick Davidt <hallo@davidt.de>
  * @license MIT
  */
 

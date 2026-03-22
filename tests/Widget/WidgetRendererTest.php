@@ -6,7 +6,7 @@
  * Tests widget rendering, script loading, and data attribute handling.
  *
  * @package Uniform\Mosparo\Tests\Widget
- * @author Patrick Schumacher <hello@patrick-schumacher.de>
+ * @author Patrick Davidt <hallo@davidt.de>
  * @license MIT
  */
 

@@ -7,7 +7,7 @@
  * fields and script tags in Kirby Uniform forms.
  *
  * @package Uniform\Mosparo
- * @author Patrick Schumacher <hello@patrick-schumacher.de>
+ * @author Patrick Davidt <hallo@davidt.de>
  * @license MIT
  */
 

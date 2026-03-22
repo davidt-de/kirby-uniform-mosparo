@@ -6,7 +6,7 @@
  * Comprehensive test suite for MosparoGuard with mocked Mosparo API client.
  *
  * @package Uniform\Mosparo\Tests
- * @author Patrick Schumacher <hello@patrick-schumacher.de>
+ * @author Patrick Davidt <hallo@davidt.de>
  * @license MIT
  */
 

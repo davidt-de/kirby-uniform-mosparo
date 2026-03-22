@@ -6,7 +6,7 @@
  * Comprehensive test suite for Config value object and ConfigFactory.
  *
  * @package Uniform\Mosparo\Tests
- * @author Patrick Schumacher <hello@patrick-schumacher.de>
+ * @author Patrick Davidt <hallo@davidt.de>
  * @license MIT
  */
 

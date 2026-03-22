@@ -6,7 +6,7 @@
  * Tests bypass protection, error sanitization, and ignored field handling.
  *
  * @package Uniform\Mosparo\Tests\Guards
- * @author Patrick Schumacher <hello@patrick-schumacher.de>
+ * @author Patrick Davidt <hallo@davidt.de>
  * @license MIT
  */
 

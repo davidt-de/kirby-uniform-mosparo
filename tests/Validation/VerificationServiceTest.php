@@ -6,7 +6,7 @@
  * Tests bypass protection, field filtering, and verification logic.
  *
  * @package Uniform\Mosparo\Tests\Validation
- * @author Patrick Schumacher <hello@patrick-schumacher.de>
+ * @author Patrick Davidt <hallo@davidt.de>
  * @license MIT
  */
 

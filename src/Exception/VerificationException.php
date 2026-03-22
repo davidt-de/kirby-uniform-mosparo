@@ -6,7 +6,7 @@
  * Provides translation key support for i18n error messages.
  *
  * @package Uniform\Mosparo\Exception
- * @author Patrick Schumacher <hello@patrick-schumacher.de>
+ * @author Patrick Davidt <hallo@davidt.de>
  * @license MIT
  */
 

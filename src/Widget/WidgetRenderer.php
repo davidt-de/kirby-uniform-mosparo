@@ -7,7 +7,7 @@
  * Provides methods to render the widget container and load required scripts.
  *
  * @package Uniform\Mosparo\Widget
- * @author Patrick Schumacher <hello@patrick-schumacher.de>
+ * @author Patrick Davidt <hallo@davidt.de>
  * @license MIT
  */
 
