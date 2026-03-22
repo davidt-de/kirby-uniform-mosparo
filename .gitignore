@@ -1,0 +1,19 @@
+# Composer dependencies (never commit)
+/vendor/
+/composer.lock
+
+# Test coverage reports
+/tests/coverage/
+
+# PHPUnit cache
+.phpunit.result.cache
+
+# PHP-CS-Fixer cache
+.php-cs-fixer.cache
+
+# IDE directories
+/.idea/
+/.vscode/
+
+# macOS files
+.DS_Store
