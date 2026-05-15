@@ -73,10 +73,10 @@ class MosparoPlugin
                 'dataAttributes' => [],
             ],
 
-            // Translation files path (prepared for Phase 3)
+            // Translation files loaded as arrays for Kirby 5 compatibility
             'translations' => [
-                'en' => __DIR__ . '/../i18n/en.php',
-                'de' => __DIR__ . '/../i18n/de.php',
+                'en' => require __DIR__ . '/../i18n/en.php',
+                'de' => require __DIR__ . '/../i18n/de.php',
             ],
 
             // Template snippets path (prepared for Phase 3)

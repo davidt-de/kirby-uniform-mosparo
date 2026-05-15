@@ -2,7 +2,7 @@
     "name": "davidt-de/kirby-uniform-mosparo",
     "description": "Mosparo spam protection for Kirby Uniform forms",
     "type": "kirby-plugin",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": "MIT",
     "homepage": "https://github.com/davidt-de/kirby-uniform-mosparo",
     "keywords": [
