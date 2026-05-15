@@ -89,6 +89,49 @@ class WidgetRenderer
     }
 
     /**
+     * Render the Mosparo initialization script
+     *
+     * Generates JavaScript to initialize the Mosparo widget after the
+     * frontend library has been loaded.
+     *
+     * @param array<string, mixed> $options Initialization options (id, loadCssResource, customOptions)
+     * @return string HTML script tag with initialization code
+     */
+    public static function renderInitScript(array $options = []): string
+    {
+        $config = ConfigFactory::fromKirbyOptions();
+        
+        if (!$config->isConfigured()) {
+            return '<!-- Mosparo: Not configured -->';
+        }
+
+        $id = $options['id'] ?? 'mosparo-box';
+        $loadCssResource = $options['loadCssResource'] ?? true;
+        $customOptions = $options['customOptions'] ?? [];
+        
+        // Build initialization options
+        $initOptions = array_merge([
+            'uuid' => $config->getUuid(),
+            'publicKey' => $config->getPublicKey(),
+        ], $customOptions);
+        
+        // Add CSS URL if loading CSS resource is enabled
+        if ($loadCssResource) {
+            $initOptions['loadCssResource'] = true;
+        }
+        
+        $jsonOptions = json_encode($initOptions, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_AMP | JSON_HEX_QUOT);
+        
+        $html = sprintf(
+            '<script>document.addEventListener("DOMContentLoaded", function() { new mosparo(document.getElementById("%s"), %s); });</script>',
+            htmlspecialchars($id, ENT_QUOTES, 'UTF-8'),
+            $jsonOptions
+        );
+        
+        return $html;
+    }
+
+    /**
      * Build data-mosparo-* attributes
      *
      * @param Config $config Mosparo configuration
