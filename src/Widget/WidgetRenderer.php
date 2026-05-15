@@ -122,9 +122,14 @@ class WidgetRenderer
         
         $jsonOptions = json_encode($initOptions, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_AMP | JSON_HEX_QUOT);
         
+        $host = rtrim($config->getHost() ?? '', '/');
+        
         $html = sprintf(
-            '<script>document.addEventListener("DOMContentLoaded", function() { new mosparo(document.getElementById("%s"), %s); });</script>',
+            '<script>document.addEventListener("DOMContentLoaded", function() { new mosparo("%s", "%s", "%s", "%s", %s); });</script>',
             htmlspecialchars($id, ENT_QUOTES, 'UTF-8'),
+            htmlspecialchars($host, ENT_QUOTES, 'UTF-8'),
+            htmlspecialchars($config->getUuid() ?? '', ENT_QUOTES, 'UTF-8'),
+            htmlspecialchars($config->getPublicKey() ?? '', ENT_QUOTES, 'UTF-8'),
             $jsonOptions
         );
         
