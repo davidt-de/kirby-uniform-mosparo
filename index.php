@@ -33,8 +33,6 @@ if (!class_exists(Uniform\Mosparo\MosparoPlugin::class)) {
         require_once $autoloadFile;
     }
 }
-require_once __DIR__ . '/src/helpers.php';
-
 use Kirby\Cms\Kirby;
 use Uniform\Mosparo\MosparoPlugin;
 

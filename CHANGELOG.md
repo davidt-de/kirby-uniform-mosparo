@@ -10,6 +10,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Placeholder for future changes
 
+## [1.0.4] - 2026-05-23
+
+### Fixed
+- Helper functions (`mosparo_field()`, `mosparo_script()`) now load automatically via Composer `files` autoloading, making them available even when the plugin is installed via Composer outside of `site/plugins/`.
+- Removed redundant `require_once` calls for `helpers.php` from `index.php` and `MosparoPlugin::register()`.
+
 ## [1.0.0] - 2026-03-07
 
 ### Added

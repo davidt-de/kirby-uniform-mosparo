@@ -27,7 +27,7 @@ class MosparoPlugin
     /**
      * Plugin version
      */
-    public const VERSION = '1.0.0';
+    public const VERSION = '1.0.4';
 
     /**
      * Register plugin extensions with Kirby
@@ -47,9 +47,6 @@ class MosparoPlugin
                 'Please run: composer require mzur/kirby-uniform'
             );
         }
-
-        // Load helper functions
-        require_once __DIR__ . '/helpers.php';
 
         return [
             // Register the Mosparo guard for form validation
